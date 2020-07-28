@@ -7,19 +7,34 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/frameLayout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="1" />-->
+
+    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+    <!--        android:id="@+id/btmNavigation"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="54dp"-->
+    <!--        android:background="@color/white"-->
+    <!--        app:itemIconTint="@drawable/bottom_navigation_item_selector"-->
+    <!--        app:itemTextColor="@drawable/bottom_navigation_item_selector"-->
+    <!--        app:labelVisibilityMode="labeled"-->
+    <!--        app:menu="@menu/main_bottom_navigation" />-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/btmNavigation"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tb"
         android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:background="@color/white"
-        app:itemIconTint="@drawable/bottom_navigation_item_selector"
-        app:itemTextColor="@drawable/bottom_navigation_item_selector"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/main_bottom_navigation" />
+        android:layout_height="35dp"
+        android:background="#33FFCDCD"
+        app:tabIndicatorColor="#0BFF0040"
+        app:tabRippleColor="#A6FFF9B1"
+        app:tabSelectedTextColor="#0FFF0000"
+        app:tabTextColor="#FFFFFF" />
 </LinearLayout>
