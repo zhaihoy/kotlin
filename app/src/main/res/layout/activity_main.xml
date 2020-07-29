@@ -34,7 +34,7 @@
         android:layout_height="35dp"
         android:background="#33FFCDCD"
         app:tabIndicatorColor="#0BFF0040"
-        app:tabRippleColor="#A6FFF9B1"
+        app:tabRippleColor="#B5FFD7B1"
         app:tabSelectedTextColor="#0FFF0000"
         app:tabTextColor="#FFFFFF" />
 </LinearLayout>

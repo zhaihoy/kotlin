@@ -11,9 +11,7 @@ import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.item_tab.view.*
 
-class MainActivity : AppCompatActivity()
-//    , TabLayout.OnTabSelectedListener
-{
+class MainActivity : AppCompatActivity() {
     private val mFragments = ArrayList<Fragment>()
     private var mTitles = arrayOf("首页", "项目", "广场", "公众号", "我")
     private var mIcons = arrayOf(
@@ -34,15 +32,14 @@ class MainActivity : AppCompatActivity()
 
     private fun setItem() {
         for (i in mTitles.indices) {
-            print("----" + mTitles.indices)
             tb.getTabAt(i)?.text = mTitles[i]
         }
     }
 
     private fun initView() {
-        mFragments.add( HomeFragment())
+        mFragments.add(HomeFragment())
         mFragments.add(ProjectFragment())
-        mFragments.add( LiveFragment())
+        mFragments.add(LiveFragment())
         mFragments.add(WechatFragment())
         mFragments.add(AboutMeFragment())
 
@@ -68,29 +65,5 @@ class MainActivity : AppCompatActivity()
         }
     }
 
-
-
-
-    private fun setFragmentPosition(i: Int) {
-
-
-    }
-//
-//    override fun onTabReselected(p0: TabLayout.Tab?) {
-//        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-//        //Tab重新选择时候回调
-//    }
-//
-//    override fun onTabUnselected(p0: TabLayout.Tab?) {
-//        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-//        //Tab未被选择时候回调
-//    }
-//
-//    override fun onTabSelected(p0: TabLayout.Tab?) {
-//        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-//        //Tab被选的时候回调
-//        vp.currentItem = p0!!.position
-//
-//    }
 
 }
